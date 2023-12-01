@@ -1,0 +1,53 @@
+/* Flip card container styles */
+.flip-card {
+  display:inline-flex;
+  margin-left: 1rem;
+  
+padding: 1px;
+
+
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+/* Inner container for the flip card */
+.flip-card-inner {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+/* Hover effect for the flip card */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Front and back faces of the flip card */
+.flip-card-front,
+.flip-card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+/* Styling for the front face with an image */
+.flip-card-front img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Styling for the back face */
+.flip-card-back {
+  background-color: #f1f1f1;
+  color: black;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box; /* Added to fix sizing issue */
+}
