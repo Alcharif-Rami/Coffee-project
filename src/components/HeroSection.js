@@ -1,21 +1,21 @@
 import React from "react";
 import "../App.css";
-import { Button } from "./Button";
+
 import "./HeroSection.css";
 
 function HeroSection() {
   return (
     <div className="hero-container">
       <video src="/Videos/video-2.mp4" autoPlay loop muted />
-      <h1>TEXT</h1>
+      <h1>Specialty Coffee</h1>
       <div className="here-btns">
-        <Button
+        {/* <Button
           className="btns"
           buttonStyle="btn--outline"
           buttonSize="btn-large"
-        >
-          TEXT
-        </Button>
+        > */}
+          {/* TEXT
+        </Button> */}
       </div>
     </div>
   );

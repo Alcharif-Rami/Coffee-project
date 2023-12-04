@@ -6,12 +6,12 @@ import './Card.css';
 const Cards = () => {
   return (
     <div className="cards">
-      <h1>TEXT</h1>
+      <h1>Categories</h1>
       <div className="cards__container">
         <div className="cards__wrapper">
           <ul className="cards__items">
             <CardItem
-              src="photos/Flags-picture.jpeg"
+              src="photos/world.webp"
               text="Variety of coffee"
               label="Origins"
               path="/origins"

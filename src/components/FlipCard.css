@@ -1,12 +1,12 @@
 /* Flip card container styles */
 .flip-card {
   display:inline-flex;
-  margin-left: 1rem;
-  
+  margin-left: 15%;
+  margin-top: 1rem;
 padding: 1px;
 
 
-  width: 300px;
+  width: 30%;
   height: 300px;
   perspective: 1000px;
 }

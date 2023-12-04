@@ -1,0 +1,11 @@
+Buna ziua!
+
+Proiectul este despre cafea! In momentul de fata am o prezentare vaga a lui datorita lipsei de timp.
+Am ales sa merg pe libraria React deoarece nu stiu prea multe despre acesta. In proiect puteti vedea cum am folosit
+calitatiile librariei si cum am si editat lucrurile in CSS incat totul sa mearga si sa si arate bine. Am lucrat si 
+putin in java script incat sa realizez niste funtionalitati.Proiectul afiseaza vasticitatea cafelei de specialitate 
+si cat de complexa poate fi acesta.
+
+Va multumesc pentru atenite.
+
+-Alcharif Rami
