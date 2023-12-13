@@ -1,47 +1,41 @@
 /* Flip card container styles */
-.flip-card {
-  display: inline-flex;
-  margin-left: 13%;
-  margin-top: 1rem;
-  padding: 1px;
+.brew-card {
+  display: flex;
+  margin-left: 35%;
+  margin-top: 2rem;
+  padding: 10px;
   width: 30%;
-  height: 280px;
+  height: 700px;
   perspective: 1000px;
-
-  
 }
 
 /* Inner container for the flip card */
-.flip-card-inner {
+.brew-card-inner {
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
   transition: transform 1.5s, filter 0.6s ease-in-out;
-  
 }
 
 /* Hover effect for the flip card */
-.flip-card:hover .flip-card-inner {
+.brew-card:hover .brew-card-inner {
   transform: rotateY(180deg);
- 
 }
-.flip-card:hover .flip-card-inner .flip-card-front img {
+.brew-card:hover .brew-card-inner .brew-card-front img {
   filter: blur(2px);
 }
 
 /* Front and back faces of the flip card */
-.flip-card-front,
-.flip-card-back {
+.brew-card-front,
+.brew-card-back {
   width: 100%;
   height: 100%;
   position: absolute;
   backface-visibility: hidden;
-
-  
 }
 
 /* Styling for the front face with an image */
-.flip-card-front img {
+.brew-card-front img {
   width: 100%;
   height: 100%;
   box-shadow: -10px 8px 23px 9px #000000;
@@ -49,7 +43,7 @@
 }
 
 /* Styling for the back face */
-.flip-card-back {
+.brew-card-back {
   background-color: #f1f1f1;
   color: black;
   transform: rotateY(180deg);
@@ -60,5 +54,24 @@
   padding: 1rem;
   box-sizing: border-box; /* Added to fix sizing issue */
   border-radius: 1rem;
-  
 }
+/* Add styles for the navigation buttons */
+.card-navigation {
+  font-size: 2rem;
+  color:black;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.left {
+  left: 10px;
+  z-index: 2;
+}
+
+.right {
+  right: 10px;
+  z-index: 2;
+}
+

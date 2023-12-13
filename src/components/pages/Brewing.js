@@ -1,6 +1,22 @@
-import React from 'react'
-import '../../App.css'
+// Brewing.js
+import React from "react";
+import BrewCard from "../BrewingPage"; 
+import "../BrewingPage.css"; 
+import Background from "../Background";
 
-export default function brewing(){
-    return <h1 className='brewing'>WORK IN PROGRESS</h1>;
-}
+const Brewing = () => {
+  return (
+    <Background>
+      <div>
+        <h1>Your Brewing Main Page Content</h1>
+        <BrewCard
+          frontImageSrc="/photos/Brewing/V60.webp"
+          backTitle="V60"
+          backDescription="text"
+        />
+      </div>
+    </Background>
+  );
+};
+
+export default Brewing;
