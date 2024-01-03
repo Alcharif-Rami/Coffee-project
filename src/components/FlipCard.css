@@ -50,8 +50,8 @@
 
 /* Styling for the back face */
 .flip-card-back {
-  background-color: #f1f1f1;
-  color: black;
+  background-color: #FFEFCE;
+  color: #0F2A3D;
   transform: rotateY(180deg);
   display: flex;
   flex-direction: column;

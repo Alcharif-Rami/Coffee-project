@@ -1,28 +1,16 @@
-import React from 'react';
-import './BrewingPage.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowCircleLeft, faArrowCircleRight } from '@fortawesome/free-solid-svg-icons';
+// BrewCard.js
+import React from "react";
 
-const BrewCard = ({ frontImageSrc, backTitle, backDescription }) => {
+
+const BrewCard = (props) => {
   return (
-    <div className="brew-card">
-      {/* Add left navigation button */}
-      <FontAwesomeIcon icon={faArrowCircleLeft} className="card-navigation left" />
-
-      <div className="brew-card-inner">
-        <div className="brew-card-front">
-          <img src={frontImageSrc} alt="Card" />
-        </div>
-        <div className="brew-card-back">
-          <div className="text">
-            <h1>{backTitle}</h1>
-            <p>{backDescription}</p>
-          </div>
-        </div>
+    <div className="card">
+      <img className="product--image" 
+      src={props.src} 
+      alt={`Brew ${props.id}`} />
+      <div className="description">
+      <p>{props.description}</p>
       </div>
-
-      {/* Add right navigation button */}
-      <FontAwesomeIcon icon={faArrowCircleRight} className="card-navigation right" />
     </div>
   );
 };

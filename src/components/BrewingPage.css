@@ -1,77 +1,48 @@
-/* Flip card container styles */
-.brew-card {
-  display: flex;
-  margin-left: 35%;
-  margin-top: 2rem;
-  padding: 10px;
-  width: 30%;
-  height: 700px;
-  perspective: 1000px;
-}
-
-/* Inner container for the flip card */
-.brew-card-inner {
-  width: 100%;
-  height: 100%;
-  transform-style: preserve-3d;
-  transition: transform 1.5s, filter 0.6s ease-in-out;
-}
-
-/* Hover effect for the flip card */
-.brew-card:hover .brew-card-inner {
-  transform: rotateY(180deg);
-}
-.brew-card:hover .brew-card-inner .brew-card-front img {
-  filter: blur(2px);
-}
-
-/* Front and back faces of the flip card */
-.brew-card-front,
-.brew-card-back {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  backface-visibility: hidden;
-}
-
-/* Styling for the front face with an image */
-.brew-card-front img {
-  width: 100%;
-  height: 100%;
-  box-shadow: -10px 8px 23px 9px #000000;
-  border-radius: 1rem;
-}
-
-/* Styling for the back face */
-.brew-card-back {
-  background-color: #f1f1f1;
-  color: black;
-  transform: rotateY(180deg);
+/* BrewingCarousel.css */
+.card{
   display: flex;
   flex-direction: column;
+  align-items: center;
+  border: 1px solid transparent; 
+  padding: 10px;
+  margin-right: 10px;
+  height: 100%;
+  
+  
+}
+
+
+.brewing-carousel-container {
+  display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
-  box-sizing: border-box; /* Added to fix sizing issue */
-  border-radius: 1rem;
-}
-/* Add styles for the navigation buttons */
-.card-navigation {
-  font-size: 2rem;
-  color:black;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  cursor: pointer;
+  height: 100vh;
+  margin: 0% 10% 10% 10%;
 }
 
-.left {
-  left: 10px;
-  z-index: 2;
+.carousel-item {
+  margin-right: 50px;
 }
 
-.right {
-  right: 10px;
-  z-index: 2;
+.product--image {
+  width: 100%; 
+  height: 60%; 
+  object-fit: cover;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
 }
 
+.description{
+ margin-top: 10px;
+ text-align: center;
+ filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.7));
+ 
+ 
+}
+
+.brewing-carousel {
+  max-width: 1000px;
+  width: 100%;
+  
+  border-radius: 5px;
+  border-color: transparent;
+}
